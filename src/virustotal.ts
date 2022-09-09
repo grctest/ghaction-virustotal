@@ -50,7 +50,7 @@ export class VirusTotal {
             }),
         fd.getBuffer(),
         {
-          headers: fd.getHeaders()
+          headers: {'Content-Type': 'multipart/form-data'}
         }
       )
       .then(upload => {
